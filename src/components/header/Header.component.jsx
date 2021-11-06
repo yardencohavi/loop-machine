@@ -2,31 +2,22 @@ import React from "react";
 import './Header.styles.scss';
 import pause from '../../assets/images/pause.png';
 import play from '../../assets/images/play.png'
-import { useState } from "react/cjs/react.development";
+import { useLoopContext } from "../../loopState/LoopProvider";
 
-const Header = ({sounds}) => {
-    const [songs] = useState(sounds);
-    const handlePlay = (playing) =>{
-        if(playing){
-            songs.forEach(song => {
-                if(!song.audio.paused){
-                    song.audio.pause();
-                }
-            })
-        }else{
-            songs.forEach(song => {
-                if(song.audio.paused){
-                    song.audio.play();
-                }
-            })
+const Header = () => {
+    const loopStateContext = useLoopContext();
+    
+    const handleClick = (play) => {
+        if((play && loopStateContext.isPlaying) || (!play && !loopStateContext.isPlaying)){
+            loopStateContext.playPauseLoop(!loopStateContext.isPlaying);
         }
     }
     return(
         <div className="header">
             <div className="title">Loop machine</div>
             <div>
-                <img alt ='' className="button button-pause grow" src={pause} onClick={handlePlay(true)}/>
-                <img alt ='' className="button button-play grow" src={play} onClick={handlePlay(false)}/>
+                <img onClick={() => handleClick(true)} alt ='' className="button button-pause grow" src={pause} />
+                <img onClick={() => handleClick(false)} alt ='' className="button button-play grow" src={play} />
             </div>
         </div>
     )
