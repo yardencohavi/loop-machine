@@ -1,22 +1,12 @@
 import React from 'react';
 import 'tachyons';
-import Particles from 'react-particles-js';
-import { sounds } from './sounds';
+import Particles from 'react-tsparticles';  
+import { sounds } from './helpers/sounds';
 import './App.css';
 import CardList from './components/cardList/CardList.component';
 import Header from './components/header/Header.component';
+import { particlesOptions } from './helpers/particles';
 
-const particlesOptions =  {
-  particles: {
-   number: {
-     value: 100,
-     density:{
-       enable: true,
-       value_area:800
-     }
-   }
-  }
-}
 function App() {
     return(
       <div className="App">

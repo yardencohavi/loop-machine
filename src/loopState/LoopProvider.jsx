@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import { sounds } from "../sounds.js";
+import { sounds } from "../helpers/sounds.js";
 import useInterval from "../hooks/useInterval";
 
 const LoopContext = createContext(null);
