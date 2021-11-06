@@ -41,8 +41,8 @@ export const LoopProvider = ({ children }) => {
             playPauseLoop(false);
         };
     };
-    //set time of delay 
-    const timeOfNextLoop= 5000;
+    //set time of delay based on 120BPM X2
+    const timeOfNextLoop= 8000;
 
     const playPauseLoop  = (status)=> {
         setIsPlaying(status);
