@@ -1,6 +1,6 @@
 # Loop-machine
 This app is a front project which implements a Loop-machine. 
-It has 9 pads which each pad present a loop sample.
+It has 9 pads which each pad presents a loop sample.
 When a pad is turned on, the loop is starting to play on the next loop cycle.
 When a pad is turned off, it should stop playing immediately.
 
