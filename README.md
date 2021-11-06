@@ -18,7 +18,6 @@ Demo:
 <p align="center"><img src="" width="500" /></p>
 
 ## Tech stack
-1. HTML
-2. CSS
-4. Javascript
-3. Movies API
+1. CSS
+2. REACT
+
