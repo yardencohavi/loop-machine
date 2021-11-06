@@ -18,6 +18,7 @@ Demo:
 <p align="center"><img src="" width="500" /></p>
 
 ## Tech stack
-1. CSS
-2. REACT
+1. HTML
+2. SCSS
+3. REACT
 
