@@ -5,7 +5,7 @@ import SoundCard from "../sound-card/SoundCard.component";
 const CardList = ({sounds}) => {
     return (
       <div className="container-list">
-        <div className="flex flex-wrap justify-center">
+        <div className="card-list flex flex-wrap justify-center">
         {
           sounds.map((sound,i) => {
             return (

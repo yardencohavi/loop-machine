@@ -9,3 +9,9 @@
     height: 150px;
     padding: 30px;
 }
+@media only screen and (max-width:600px){
+    .sound-card{
+        height: 100px;
+        padding: 20px;
+    }
+}
