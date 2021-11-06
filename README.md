@@ -10,7 +10,7 @@ When a pad is turned off, it should stop playing immediately.
     2. npm start
 ```
 
-Demo: 
+Demo: https://looper-machine.netlify.app/
 
 ## Table Of Contents
 - [Loop-machine](#Loop-machine)
@@ -18,7 +18,7 @@ Demo:
   * [Tech Stack](#tech-stack)
   
 ## Screenshot
-<p align="center"><img src="" width="500" /></p>
+<p align="center"><img src="https://ibb.co/7VhpFPj" width="500" /></p>
 
 ## Tech stack
 1. HTML
