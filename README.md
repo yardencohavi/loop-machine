@@ -7,7 +7,7 @@ When a pad is turned off, it should stop playing immediately.
 ### To run the app, please enter the following commands in this order:
 ```sh
     1. npm i
-    2. npm start
+    2. npm started
 ```
 
 Demo: https://looper-machine.netlify.app/
